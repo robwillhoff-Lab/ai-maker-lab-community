@@ -15,6 +15,16 @@ journal, and use separately installed creative tools. The learning loop is
 **Imagine → Predict → Build → Test → Explain**. Adults choose appropriate
 activities, administer accounts, review AI output, and supervise physical making.
 
+## Watch the Full Demo
+
+**[▶ Watch AI Maker Lab Community — Full Demo (2:39)](https://github.com/robwillhoff-Lab/ai-maker-lab-community/issues/1)**
+
+See AI Maker Lab running on Omarchy Linux, including Maker Coach (AI Tutor), Codex Code Lab, 3D Workshop, and Gaming Lab.
+
+The video demonstrates a personalized family installation. The public community alpha is experimental, and some demonstrated features require separately installed applications or additional configuration.
+
+**Platform:** Primarily tested on Omarchy Linux with Hyprland. Compatibility with other Linux environments has not yet been established.
+
 ## What the alpha provides
 
 | Pathway | Current behavior |
