@@ -1,0 +1,9 @@
+{
+  "display_name": "Learner",
+  "application_launchers": {
+    "bambu": {
+      "kind": "executable",
+      "path": "~/Applications/BambuStudio.AppImage"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "display_name": "Learner",
+  "coach_url": null,
+  "terminal": "foot",
+  "bambu_command": "bambu-studio",
+  "minecraft_command": "prismlauncher",
+  "doom_command": "doomretro",
+  "freedoom_wad": null,
+  "application_launchers": {}
+}

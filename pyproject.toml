@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-maker-lab"
+version = "0.1.0a0"
+description = "A portable, parent-guided GTK Maker Lab development dashboard"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+readme = "README.md"
+# GTK/PyGObject is a system dependency; no dependencies are downloaded here.
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
