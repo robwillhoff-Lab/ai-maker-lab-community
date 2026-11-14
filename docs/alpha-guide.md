@@ -179,7 +179,7 @@ corruption and malicious same-user races are not guaranteed. Keep backups.
 ```sh
 python3 -B -m unittest discover -s tests -v
 python3 -B scripts/accept_installer.py
-python3 -B scripts/check_public_snapshot.py --snapshot
+python3 -B scripts/check_public_snapshot.py
 ```
 
 The acceptance harness requires an already installed Bubblewrap and supported
@@ -190,7 +190,16 @@ checks and regressions there. It does not launch Codex, Bambu, Prism, games,
 browsers or printers. Network namespaces were unavailable in the tested tool
 environment; filesystem isolation is verified without claiming network isolation.
 
-The exact snapshot must be checked before adding Git history or runtime data.
+The default verification command above is for a normal Git checkout and permits
+its `.git` directory. For an exported source snapshot without `.git`, enter the
+exported directory and run:
+
+```sh
+python3 -B scripts/check_public_snapshot.py --snapshot .
+```
+
+Snapshot mode requires the exact public file inventory and rejects Git metadata
+and runtime data. Check an exported snapshot before adding either.
 The alpha remains unverified for installed menu/GUI acceptance, real external
 app startup, other platforms/versions, upgrades, signatures, concurrent use,
 and persistent Code Lab sessions. These limitations are intentional disclosures,

@@ -2,8 +2,13 @@
 
 AI Maker Lab is an **early Linux alpha**: a parent-supervised GTK dashboard for
 creative learning. The Python package version is `0.1.0a0`; the human release
-name is **v0.1.0-alpha**. This candidate has not been published. The proposed
-community repository does not yet exist.
+name is **v0.1.0-alpha**.
+
+The AI Maker Lab Community repository is hosted at:
+https://github.com/robwillhoff-Lab/ai-maker-lab-community
+
+The repository is currently in private pre-release staging. Public availability
+is not yet announced.
 
 Learners can plan small games and scripts, explore 3D design, keep a maker
 journal, and use separately installed creative tools. The learning loop is
@@ -142,12 +147,21 @@ force-delete workaround. Normal pip/wheel installation is not an accepted path.
 ```sh
 python3 -B -m unittest discover -s tests -v
 python3 -B scripts/accept_installer.py
-python3 -B scripts/check_public_snapshot.py --snapshot
+python3 -B scripts/check_public_snapshot.py
 ```
 
-The last command checks a curated snapshot, not the private development repository
-with its additional records. Source maintainers use `--source` before copying the
-explicit [public file inventory](release/public-files.txt). Acceptance runs in a
+The last command verifies a normal Git checkout and permits its `.git` directory.
+For an exported source snapshot without `.git`, enter the exported directory and
+run:
+
+```sh
+python3 -B scripts/check_public_snapshot.py --snapshot .
+```
+
+Snapshot mode requires exactly the [public file inventory](release/public-files.txt)
+and rejects Git metadata and extra files. Source maintainers use `--source` when
+checking selected files inside a private development tree with additional records.
+Acceptance runs in a
 temporary filesystem sandbox, not the real account; it stops if isolation cannot
 be established. No external application is launched by these tests.
 
