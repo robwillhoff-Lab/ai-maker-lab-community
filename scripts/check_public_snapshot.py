@@ -16,6 +16,7 @@ PRIVATE_PARTS = {'.git', '.dev-data', '.aws', '.ssh', '.codex', '.cache', '__pyc
                  'backups', 'worlds', 'saves', 'profiles', 'node_modules', '.venv'}
 PUBLIC_URLS = {'https://learn.chatgpt.com/docs/sandboxing',
                'https://github.com/robwillhoff-Lab/ai-maker-lab-community',
+               'https://github.com/robwillhoff-Lab/ai-maker-lab-community/issues/1',
                'https://github.com/github/gitignore/blob/main/LICENSE'}
 FIXTURE_URLS = {'https://chatgpt.com/g/example', 'http://chatgpt.com/g/example',
                 'https://chatgpt.com.evil.invalid/g/example',
